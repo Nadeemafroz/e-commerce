@@ -1,0 +1,43 @@
+# Root
+node_modules/
+.env
+.DS_Store
+*.log
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Dependency directories
+client/node_modules/
+server/node_modules/
+
+# Build output
+client/build/
+server/dist/
+dist/
+build/
+
+# Environment files
+client/.env
+server/.env
+
+# OS and IDE files
+*.swp
+*.swo
+Thumbs.db
+ehthumbs.db
+.idea/
+.vscode/
+*.iml
+
+# Optional: Ignore coverage and test output
+coverage/
+*.lcov
+
+# Optional: Ignore database files (like SQLite)
+*.sqlite
+*.db
+*.db-journal
