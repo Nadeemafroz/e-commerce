@@ -1,113 +1,119 @@
-# 🛒 MERN E-Commerce App
 
-![MERN Stack](https://img.shields.io/badge/MERN-Stack-blue)
-![License](https://img.shields.io/badge/License-MIT-green)
+# E-Commerce App
 
-A full-featured e-commerce platform built with MongoDB, Express, React, and Node.js.
+A full-featured e-commerce platform built using the MERN stack (MongoDB, Express.js, React, Node.js). The app enables users to browse, search, and purchase products, while providing admins with tools to manage products, users, and orders efficiently. It features secure authentication, real-time cart updates, category-based filtering, and integrated payment gateways for smooth checkout experiences.
 
-## ✨ Features
 
-### User Features
-- ✅ User registration & login (JWT authentication)
-- 🔍 Product browsing with search and filters
-- 🛒 Shopping cart functionality
-- 💳 Secure checkout process
-- 📦 Order history tracking
+## Features
 
-### Admin Features
-- 👔 Admin dashboard
-- 📊 Product management (CRUD operations)
-- 📝 Order management
-- 📈 Sales analytics
+### 🔐 **User Authentication (JWT)**
+Secure login system with user/admin role-based access using JWT and bcrypt.
 
-## 🚀 Tech Stack
+**Login demo:**  
+![App Screenshot](https://res.cloudinary.com/dmdgp4yf9/image/upload/v1748272821/e-commerce/auth.gif)
 
-### Frontend
-- React.js with Hooks
-- React Router v6
-- Context API
-- Axios
-- Bootstrap/SCSS
+### 🔍 **Product Search & Filtering**
+Search for products and filter them by category in real-time.
 
-### Backend
-- Node.js & Express.js
-- MongoDB (Mongoose)
-- JWT Authentication
-- Bcrypt.js
-- Multer
+**Search Demo:**  
+![App Screenshot](https://res.cloudinary.com/dmdgp4yf9/image/upload/v1748272889/e-commerce/search.gif)
 
-## 🛠️ Installation
+### 🛒 **Dynamic Cart Management**
+Add/remove products and update quantities with real-time cart totals.
 
-1. **Clone the repository**
-```bash
-git clone https://github.com/your-username/mern-ecommerce.git
-cd mern-ecommerce
-Install dependencies
+**Cart Demo:**  
+![App Screenshot](https://res.cloudinary.com/dmdgp4yf9/image/upload/v1748272845/e-commerce/cart.gif)
 
-bash
-# Backend
-cd server
-npm install
+### 💳 **Payment Integration**
+Supports Stripe for secure online payments.
 
-# Frontend
-cd ../client
-npm install
-Environment Setup
+**Payment Demo:**  
+![App Screenshot](https://res.cloudinary.com/dmdgp4yf9/image/upload/v1748272864/e-commerce/payment.gif)
 
-Create .env files:
+### 🛠️ **Admin Panel**
+Admins can manage products, users, and orders through a dedicated dashboard.
 
-server/.env
+**Review Demo:**  
+![App Screenshot](https://res.cloudinary.com/dmdgp4yf9/image/upload/v1748272793/e-commerce/admin.gif)
 
-PORT=5000
-MONGO_URI=your_mongodb_uri
-JWT_SECRET=your_jwt_secret
-client/.env
 
-REACT_APP_API_URL=http://localhost:5000/api
-Run the application
 
-bash
-# Backend (from server directory)
-npm run dev
+## 📦 Installation
 
-# Frontend (from client directory)
-npm start
-📂 Project Structure
-mern-ecommerce/
-├── client/               # React Frontend
-│   ├── public/           # Static files
-│   ├── src/              # React source
-│   │   ├── assets/       # Images, fonts
-│   │   ├── components/   # UI components
-│   │   ├── context/      # State management
-│   │   ├── pages/       # Page components
-│   │   ├── utils/        # Helper functions
-│   │   └── App.js       # Main component
-│   └── package.json
-│
-├── server/               # Express Backend
-│   ├── config/           # Config files
-│   ├── controllers/      # Route controllers
-│   ├── models/           # MongoDB models
-│   ├── routes/           # API routes
-│   ├── middleware/       # Custom middleware
-│   ├── uploads/          # File uploads
-│   └── server.js        # Entry point
-│
-└── README.md
-🌐 Deployment
-Frontend:
-Deploy to Vercel, Netlify, or Firebase Hosting
+### 💻 Frontend (User)
 
-Backend:
-Deploy to Render, Railway, or Heroku
+1. Navigate to the `frontend` folder.  
+2. Install dependencies:
 
-🤝 Contributing
-Pull requests are welcome! For major changes, please open an issue first.
+   ```bash
+   npm install
+3.Start the development server:
+   ```
+   npm run dev
+   ```
 
-📄 License
-This project is licensed under the MIT License.
+### 🛠️ Backend (Shared for User & Admin)
 
-✍️ Author: Your Name
-📧 Email: your.email@example.com
-🔗 GitHub: @your-username
+1. Navigate to the `backend` folder.  
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+3.Create a .env file and add the required environment variables:
+  - MongoDB Atlas URI
+  - Cloudinary credentials (cloud name, API key, secret)
+  - Stripe API key
+4. Start the backend server:
+    ```bash
+   npm run dev
+   ```
+
+### 🧑‍💼 Admin Frontend
+
+1. Navigate to the `admin` folder.  
+2. Install dependencies:
+
+   ```bash
+   npm install
+3.Start the development server:
+   ```
+   npm run dev
+   ```
+## 🛠️ Tech Stack
+
+### 🧩 Frontend
+- React  
+- React Router  
+- Axios  
+- Bootstrap
+
+### 🔧 Backend
+- Node.js  
+- Express.js  
+- JWT (Authentication)  
+- bcrypt (Password Encryption)
+
+### 🗄️ Database
+- MongoDB  
+- Mongoose
+
+### 💳 Payment Integration
+- Stripe  
+- PayPal
+
+### 🛠️ Tools Used
+- Visual Studio Code  
+- Postman  
+- MongoDB Atlas  
+- Cloudinary  
+
+
+
+## 📬 Contact
+
+If you have any questions, suggestions, or feedback, feel free to reach out:
+
+- **Name**: Nadeem Afroz  
+- **Email**: nadeemafroz12@gmail.com  
+- **LinkedIn**: [linkedin.com/in/nadeem-afroz](https://www.linkedin.com/in/nadeem-afroz/)
